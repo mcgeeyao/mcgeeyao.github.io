@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+        <style>
+            body{
+                margin-top: 10px;font-size: 20px;margin-left: 10%;font-family:"LiHei Pro";
+            }
+            div{
+                margin-top: 10px;margin-bottom: 10px;
+            }
+            .aa{
+                font-size:20px;font-family: Courier New;text-decoration:none;color: #a07708;
+            }
+            .aa:hover {
+	            color:green;text-decoration: underline;
+            }
+            .aa:active {
+                color:blue;
+            }
+            .in{
+                width:200px;height:25px;
+            }
+            table {
+                margin-top: 40px ;background-color:#90aa90;border-top-right-radius: 10px;
+            }
+            table,th,td {
+                border-bottom:2px solid #010101;border-collapse: collapse;border-color: #555555;
+                width: 550px;
+            }
+            th{
+                font-size: 25px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #aa1010;padding:20px;max-width: 100cm;text-align:middle;margin-top: 10px;
+                color: #f0f0f0;
+            }
+            td {
+                padding:20px;max-width: 100cm;
+                text-align:middle;margin-top: 40px;
+            }
+            tr:nth-child(odd){
+                padding:20px;max-width: 100cm;
+                text-align:middle;margin-top: 40px;background-color: #ee8888;
+            }
+            tr:nth-child(1){
+                background-color: #000000;color: #eeeeee;text-align:center;
+            }
+            tr:nth-child(even){
+                padding:20px;max-width: 100cm;
+                text-align:middle;margin-top: 40px;background-color: #dda0a0;
+            }
+            .sub{
+                padding: 20px;border: 5px solid;width: 220px; background-color:#a07708;
+                display: inline-block;border-radius: 10px;
+            }
+            #bot{
+                margin-top: 5px;
+            }
+            #bot:hover {
+	            color:green;text-decoration: none;
+            }
+            #bot:active {
+                color:blue;
+            }
+            #back{
+                width: 1000px;
+            }
+        </style>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Machine Learning</title>
+    </head>
+    <body style="background-color: #eeeeee;width: 100%;
+    background-image: -moz-repeating-linear-gradient(back)
+    linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),url(https://lh6.googleusercontent.com/5ay9KI9x5y_X7M0kRVH-rESdVkC47a6GKrb1YpQ-vMKDoel2LmfgKeqy2Db4RB6GF-6QWWCWmUDkz_aik-kDr0YzZK4CqEMer2S2Ex02gs-Iz7in0w=w1280) ;">
+
+        <div style="font-size: 50px;text-align:center;margin:50px ;margin-left: -20%;">
+            機器學習競賽
+        </div>
+        <a href="https://sites.google.com/site/yirenyeh/home?authuser=0" class="aa" >
+            倚任個人網站
+        </a>
+        <div>
+            <div class="sub">
+                <div>上傳csv</div>
+                <form>
+                    <label style="font-size: 15px;" for="username">組別:</label><br>
+                    <input class="in" type="text" id="username" name="username"><br>
+                    <label style="font-size: 15px;" for="pwd">密碼:</label><br>
+                    <input class="in" type="text" id="pwd" name="pwd">
+                    <input type="radio" id="voice" name="task" value="voice">
+                    <label style="font-size: 15px;"for="voice">voice</label><br>
+                    <input type="radio" id="house" name="task" value="house">
+                    <label style="font-size: 15px;"for="house">house</label><br>
+                    <input id="bot" type="submit" value="確定"/>
+                </form>
+            </div>
+            <div style="display: inline-block;">
+                <a href="https://sites.google.com/site/yirenyeh/home?authuser=0">
+                    <img src="https://lh6.googleusercontent.com/5ay9KI9x5y_X7M0kRVH-rESdVkC47a6GKrb1YpQ-vMKDoel2LmfgKeqy2Db4RB6GF-6QWWCWmUDkz_aik-kDr0YzZK4CqEMer2S2Ex02gs-Iz7in0w=w1280" 
+                    style="width: 220px;position: relative;top: 30px;left: 10px;"/>   
+                </a>
+            </div>    
+        </div>
+        <table>
+            <caption style="line-height:50px;height: 50px;margin-bottom: 20px;border-radius: 5px;background-color: turquoise;">
+                上週競賽成績＆排名
+            </caption>
+            <tr>
+                <td>排名</td>
+                <td>組別</td>
+                <td>成績</td>
+            </tr>
+            <tr>
+                <th colspan="3">voice</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>陳韋宏</td>
+                <td>0.9841</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>王怡堯</td>
+                <td>0.9825</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>丁嘉宏</td>
+                <td>0.9810</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td></td>
+                <td>0.9810</td>
+            </tr>
+            <tr>
+                <th colspan="3">house</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>王怡堯</td>
+                <td>56000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>陳韋宏</td>
+                <td>58000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>丁嘉宏</td>
+                <td>58000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td></td>
+                <td>60000</td>
+            </tr>
+        </table>
+    </body>
+</html>
